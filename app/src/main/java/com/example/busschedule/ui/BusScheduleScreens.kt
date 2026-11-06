@@ -256,7 +256,7 @@ fun BusScheduleDetails(
                 }
                 Text(
                     text = SimpleDateFormat("h:mm a", Locale.getDefault())
-                        .format(Date(schedule.arrivalTimeInMillis.toLong() * 1000)),
+                        .format(Date(schedule.arrivalTime.toLong() * 1000)),
                     style = MaterialTheme.typography.bodyLarge.copy(
                         fontSize = dimensionResource(R.dimen.font_large).value.sp,
                         fontWeight = FontWeight(600)
